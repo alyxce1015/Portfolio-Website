@@ -37,7 +37,13 @@ body {
    background: #b74b4b;
 }
 
-/* Navigation bar stlying */
+/*
+*
+*
+* Navigation bar stlying 
+*
+*
+*/
 
 nav {
    width: 100%;
@@ -69,17 +75,20 @@ nav {
 }
 
 /* hamburg and cancel button moved to top right */
-.hamburg, .cancel {
+.hamburg, 
+.cancel {
    cursor: pointer;
    position: absolute;
    right: 15px;
    top: 10px;
    color: white;
    opacity: 0;
+   pointer-events: none;
+   font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
 /* displays the nav links in the line as is*/
-.nav-container .links {
+.nav-container .links{
    display: flex;
 }
 
@@ -111,5 +120,180 @@ nav {
    width: 105%;
 }
 
+/* changes the color of the nav link names */
+.nav-container .links a:hover {
+   color: #b74b4b;
+}
 
 
+.dropDown {
+   z-index: 100;
+   position: absolute;
+   top: 0;
+   transform: translateY(-500px);
+   width: 100%;
+   height: auto;
+   backdrop-filter: blur(4px) brightness(40%);
+   box-shadow: 0 0 20px black;
+   transition: 0.2s linear;
+}
+
+
+.dropDown .links a{
+   display: flex;
+   color: white;
+   text-decoration: none;
+   justify-content: center;
+   padding: 15px 0;
+   align-items: center;
+   transition: 0.2s linear;
+}
+
+
+.dropDown .links a:hover {
+   background-color: #b74b4b;
+}
+
+section {
+   width: 100%;
+   min-height: 90vh;
+}
+
+
+section .main-container {
+   display: flex;
+   justify-content: space-between;
+   padding-left: 100px;
+   align-items: center;
+}
+
+
+.main-container .Face-Image {
+   width: 500px;
+   height: 80vh;
+   border-radius: 100%;
+   overflow: hidden;
+   box-shadow: 0 0 50px #b74b4b;
+}
+
+
+.main-container .Face-Image img {
+   width: 100%;
+}
+
+
+.main-container .Face-Image:hover {
+   animation: animate 1.5s ease-in-out infinite;
+}
+
+
+@keyframes animate {
+   0% {
+      scale: 1;
+   }
+
+   50% {
+      scale: 1.05;
+   }
+
+   100% {
+      scale: 1;
+   }
+}
+
+
+.main-container .content {
+   color: white;
+   width: 40%;
+}
+
+
+.content h1 {
+   font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+
+/* Color for name*/
+.content h1 span {
+   color: #b74b4b;
+   text-shadow: 0 0 10px #b74b4b;
+}
+
+/* Font size for the type writer*/
+.content .typewriter {
+   font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+   font-weight: 600;
+}
+
+/* Color for the type writer*/
+.content .typewriter-text {
+   color: #b74b4b;
+   text-shadow: 0 0 10px #b74b4b;
+}
+
+.content p{
+   font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+   margin: 10px 0; 
+}
+
+/* design for the social link icons */
+.social-links i{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 3rem;
+   height: 3rem;
+   background-color: transparent;
+   border: 0.2rem solid #b74b4b;
+   border-radius: 50%;
+   color: #b74b4b;
+   margin: 5px 15px;
+   font-size: 1.5rem;
+   transition: 0.2s linear;
+}
+
+/* This makes it so that when you hover the social links it adds the background shadow*/
+.social-links i:hover {
+   scale: 1.3;
+   color: black;
+   background-color: #b74b4b;
+   filter: drop-shadow(0 0 10px #b74b4b);
+}
+
+
+.content button {
+   width: 50%;
+   height: 6vh;
+   margin: 30px;
+   background-color: #b74b4b;
+   color: white;
+   border: none;
+   outline: none;
+   font-size: 120%;
+   font-weight: 700;
+   border-radius: 5px;
+   transition: 0.2s linear;
+}
+
+
+.content button:hover {
+   scale: 1.1;
+   color: #b74b4b;
+   border: 2px solid #b74b4b;
+   background-color: transparent;
+   font-weight: 700;
+   box-shadow: 0 0 40px #b74b4b;
+}
+
+
+
+
+
+/* 
+*
+*
+*
+About Section CSS
+*
+*
+*
+*/
