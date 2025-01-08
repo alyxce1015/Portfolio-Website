@@ -7,6 +7,7 @@
         <!--NOTE: was not working because you have to make sure the link actually goes to the library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
     <script src="bower_components/aos/dist/aos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +18,16 @@
 <!--Navigation-->
 <nav>
     <div class="nav-container">
-        <div class="logo">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
             <span>Alyx Cui-Edio</span>
         </div>
         
         <div class="links">
-            <div class="link"><a href="#">Home</a></div>
-            <div class="link"><a href="#">About</a></div>
-            <div class="link"><a href="#">Skills</a></div>
-            <div class="link"><a href="#">Services</a></div>
-            <div class="link"><a href="#">Contact</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150"><a href="#">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250"><a href="#">Services</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Contact</a></div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
     </div>
@@ -44,27 +45,27 @@
 </nav>
 <section>
     <div class="main-container">
-        <div class="Face-Image">
+        <div class="Face-Image" data-aos="zoom-out" data-aos-duration="3000">
             <!--Easy way to include images:
                 Get image from file explorer and drag into VS image folder
                 can use that folder to link into this file
             -->
                 
             <!-- THIS IS TEMP IMAGE-->
-            <img src="Images/image7.jpg" alt="">
+            <img src="Images/276115_venoxis_halo-reach-noble-six-helmet.jpg" alt="">
         </div>
         <div class="content">
-            <h1 data-aos="fade-left">Hey I'm <span>Alyx Cui Edio</span></h1>
-            <div class="typewriter">I am a <span class="typewriter-text">person</span><label for="">|</label></div> 
-            <script src="script.js"></script>
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Alyx Cui Edio</span></h1>
+            <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I am a <span class="typewriter-text"></span><label for="">|</label></div> 
+    
             <!-- TEMP DESCRIPTION-->
-            <p>Computer Science student at CSUF and looking to work in the SWE field</p>
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Computer Science student at CSUF and looking to work in the SWE field</p>
             <div class="social-links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                <a href="#"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="button">
+            <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
                 <button>Contact Me</button>
             </div>
         </div>
@@ -78,18 +79,18 @@
 
 <section class="about" id="about">
     <div class="content">
-        <div class="title"><span>About Me</span></div>
+        <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
         <div class="about-details">
-            <div class="left">
+            <div class="left"  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
 
                 <!-- THIS IS TEMP IMAGE-->
-                <img src="Images/image4.jpg" alt="">
+                <img src="Images/pop.PNG" alt="">
             </div>
             <div class="right">
-                <div class="topic">My Goals</div>
+                <div class="topic"  data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">My Goals</div>
                 
                 <!-- TEMP DESCRIPTION-->
-                <p>I want to work in field of SWE</p>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">I want to work in field of SWE</p>
                 <div class="button">
 
                     <!-- Try to style better-->
@@ -108,16 +109,16 @@
 
 <section class="skills" id="skills">
     <div class="content">
-        <div class="title"><span>Skills</span></div>
+        <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Skills</span></div>
         <div class="skills-details">
             <div class="text">
-                <div class="topic">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                     List of my skills
                 </div>
 
                 <!-- TEMP DESCRIPTION-->
-                <p data-aos="fade-right">Python, C++, html, css, excel, word</p>
-                <div class="experience">
+                <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Python, C++, html, css, excel, word</p>
+                <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
                     <div class="num">6</div>
                     <div class="exp">
                         Months of <br />
@@ -128,26 +129,23 @@
             <!-- C++ percent -->
             <div class="boxes">
                 <div class="box">
-                    <div class="topic">C++</div>
-                    <div class="percent">70%</div>
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">C++</div>
+                    <div class="percent" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">70%</div>
                 </div>
             <!-- Python Percent -->
-            <div class="boxes">
                 <div class="box">
-                    <div class="topic">Python</div>
-                    <div class="percent">40%</div>
+                    <div class="topic"  data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">Python</div>
+                    <div class="percent" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">40%</div>
                  </div>
             <!-- HTML Percent -->
-            <div class="boxes">
                 <div class="box">
-                    <div class="topic">HTML</div>
-                    <div class="percent">60%</div>
+                    <div class="topic"  data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">HTML</div>
+                    <div class="percent" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">60%</div>
                 </div>
             <!-- CSS Percent -->    
-            <div class="boxes">
                 <div class="box">
-                    <div class="topic">CSS</div>
-                    <div class="percent">30%</div>
+                    <div class="topic"  data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">CSS</div>
+                    <div class="percent" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">30%</div>
                 </div>
             </div>
         </div>
@@ -163,10 +161,10 @@
 
 <section class="services" id="services">
     <div class="content">
-        <div class="title"><span>Services</span></div>
+        <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Services</span></div>
         <div class="boxes">
 
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
                 <div class="icon">
                     <i class="fas fa-desktop"></i>
                 </div>
@@ -175,7 +173,7 @@
                 <p>Personal Portfolio website</p>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
                 <div class="icon">
                     <i class="fa-solid fa-gamepad"></i>
                 </div>
@@ -183,7 +181,7 @@
                 <p><b>C# + Unity</b></p>
                 <p>game boy project with pokemon styled game from scratch produced in group of 15 people</p>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
                 <div class="icon">
                     <i class="fa-solid fa-code"></i>
                 </div>
@@ -191,7 +189,7 @@
                 <p><b>C++</b></p>
                 <p>game boy project with pokemon styled game from scratch produced in group of 15 people</p>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
                 <div class="icon">
                     <i class="fa-solid fa-code"></i>
                 </div>
@@ -210,13 +208,13 @@
 
 <section class="contact" id="contact">
     <div class="content">
-        <div class="title"> 
+        <div class="title" data-aos="fade-up" data-aos-duration="1500"> 
             <span>Contact Me</span>
         </div>
         <div class="text">
-            <div class="topic">If you'd like to contact me</div>
+            <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">If you'd like to contact me</div>
             <p>You can contact me directly using either social or text me personal number I will not answer phone calls due to spam calls</p>
-            <div class="button">
+            <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
                 <button><i class="fa-solid fa-phone"></i></button>
             </div>
         </div>
@@ -231,10 +229,14 @@
 <footer>
     <div class="text">
         <span> Created by 
-            <a href="#"> Alyx Cui-Edio</a>
-            | &#169; 2024 All Rights Reserved
+            <a href="#"> Alyx Cui-Edio | 2024</a>
         </span>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({offset:0});
+</script>
+<script src="script.js"></script>
  </body>
 </html>

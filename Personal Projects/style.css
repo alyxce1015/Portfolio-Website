@@ -422,7 +422,7 @@ section .button button:hover {
       color: white;
       text-align: justify;
    }
-   .skills .skills-details .experience {
+   .skills .skills-details .experience{
       display: flex;
       align-items: center;
       margin: 0 10px;
@@ -430,7 +430,11 @@ section .button button:hover {
 .skills-details .experience .num {
    color: white;
    font-size: 80px;
-   font-weight: 18px;
+}
+.skills-details .experience .exp {
+   color: white;
+   margin-left: 20px;
+   font-size: 18px;
    font-weight: 500;
    margin: 0 6px;
 }
@@ -443,11 +447,10 @@ section .button button:hover {
    justify-content: space-between;
 }
 
-.skills-details .box {
+.skills-details .box{
    width: calc(100% / 2 - 20px);
    margin: 20px 0;
 }
-
 
 
 .skills-details .boxes .topic {
@@ -649,5 +652,76 @@ footer .text span a:hover {
 
    .nav-container .links {
       display: none;
+   }
+
+   .hamburg,
+   .cancel {
+      opacity: 1;
+      pointer-events: visible;
+   }
+
+   .main-container .content {
+      margin-top:  20px;
+      width: 80%;
+   }
+
+   .social-links i {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+   }
+
+   .main-container .Face-Image {
+      z-index: -1;
+      width: 50%;
+      height: 60%;
+   }
+
+   .skills .skills-details {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   .skills-details .text {
+      width: 100%;
+      margin-bottom: 50px;
+   }
+
+   .skills-details .boxes {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+   }
+
+   .services .boxes .box {
+      margin: 20px 0;
+      width: 100%;
+   }
+
+   .contact .text {
+      width: 100%;
+   }
+}
+
+
+@media (max-width: 500px) {
+   main-container .image {
+      width: 50%;
+      height: 60%;
+      margin-bottom: 0px;
+   }
+   
+   .main-container .content {
+      width: 80%;
+   }
+
+   .main-container .button {
+      margin-top: 15px;
+   }
+
+   .skills-details .boxes .percent {
+      font-size: 50px;
+      color: #b74b4b;
    }
 }
