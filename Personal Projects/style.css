@@ -387,8 +387,6 @@ section .button button {
    outline: none;
    padding: 8px 16px;
    border-radius: 4px;
-   font-size: 25px;
-   font-weight: 400;
    background: #b74b4b;
    color: #fff;
    border: 2px solid transparent;
@@ -439,7 +437,6 @@ section .button button:hover {
    margin: 0 6px;
 }
 
-/* Issues with this section */
 .skills-details .boxes {
    width: 45%;
    display: flex;
@@ -463,7 +460,7 @@ section .button button:hover {
    font-size: 60px;
    color: #b74b4b;
 }
-/* */
+
 
 
 
@@ -471,7 +468,7 @@ section .button button:hover {
 *
 *
 *
-Services CSS
+projects CSS
 *
 *
 *
@@ -479,14 +476,14 @@ Services CSS
 
 
 
-.services .boxes {
+.projects .boxes {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
 }
 
 
-.services .boxes .box {
+.projects .boxes .box {
    margin: 20px 0;
    width: calc(100% / 3 - 20px);
    text-align: center;
@@ -499,13 +496,13 @@ Services CSS
 }
 
 
-.services .boxes .box:hover {
+.projects .boxes .box:hover {
    background: #b74b4b;
    color: #fff;
 }
 
 
-.services .boxes .box .icon {
+.projects .boxes .box .icon {
    height: 50px;
    width: 50px;
    background: #b74b4b;
@@ -525,15 +522,15 @@ Services CSS
 }
 
 
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover .p {
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover .p {
    color: white;
    transition: all 0.4s ease;
 }
 
 
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover .p {
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover .p {
    color: #fff;
 }
 
@@ -558,7 +555,7 @@ Contact Section CSS
 
 .contact .content {
    margin: 0 auto;
-   padding: 30px 0;
+   padding: 45px 0;
 }
 
 .contact .text {
@@ -567,9 +564,20 @@ Contact Section CSS
    margin: auto;
 }
 
+.contact-info a{
+   color: white;
+}
+
+
+.contact-info p:hover{
+   text-decoration: underline;
+   cursor: pointer;
+   text-shadow: 0 0 10px #fff;
+}
+
+
 
 footer {
-   background: #b74b4b;
    padding: 15px 0;
    text-align: center;
    font-family: 'Poppins', sans-serif;
