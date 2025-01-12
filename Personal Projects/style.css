@@ -20,7 +20,6 @@ body {
 }
 
 /* Custom Scroll Bar CSS */
-
 ::-webkit-scrollbar-track {
    background: #f1f1f1;
 }
@@ -37,6 +36,8 @@ body {
    background: #b74b4b;
 }
 
+
+
 /*
 *
 *
@@ -44,6 +45,8 @@ body {
 *
 *
 */
+
+
 
 nav {
    width: 100%;
@@ -154,6 +157,7 @@ nav {
    background-color: #b74b4b;
 }
 
+
 section {
    width: 100%;
    min-height: 90vh;
@@ -230,6 +234,7 @@ section .main-container {
    text-shadow: 0 0 10px #b74b4b;
 }
 
+
 .content p{
    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
    margin: 10px 0; 
@@ -260,7 +265,7 @@ section .main-container {
 }
 
 
-.content button {
+.content button{
    width: 50%;
    height: 6vh;
    margin: 30px;
@@ -272,6 +277,15 @@ section .main-container {
    font-weight: 700;
    border-radius: 5px;
    transition: 0.2s linear;
+}
+
+.content button a {
+   color: white;
+}
+
+
+.content button:hover a {
+   color: #b74b4b;
 }
 
 
@@ -286,8 +300,6 @@ section .main-container {
 
 
 
-
-
 /* 
 *
 *
@@ -299,11 +311,13 @@ About Section CSS
 */
 
 
+
 section .content {
    width: 80%;
    margin: 0px auto;
    font-family: 'Poppins', sans-serif;
 }
+
 
 .about .about-details {
    display: flex;
@@ -348,10 +362,10 @@ section .title span::after {
 }
 
 
-
 .about .about-details .left {
    width: 45%;
 }
+
 
 .about .left img {
    height: 400px;
@@ -360,9 +374,11 @@ section .title span::after {
    border-radius: 12px;
 }
 
+
 .about-details .right {
    width: 55%;
 }
+
 
 section .topic {
    color: white;
@@ -405,30 +421,44 @@ section .button button:hover {
 .skills {
    background: black;
    }
+
+
 .skills .content {
    padding: 40px 0;
 }
+
+
 .skills .skills-details {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
+
+
 .skills-details .text {
    width: 50%;
    }
+
+
    .skills-details p {
       color: white;
       text-align: justify;
    }
+
+
    .skills .skills-details .experience{
       display: flex;
       align-items: center;
       margin: 0 10px;
    }
+
+
 .skills-details .experience .num {
    color: white;
    font-size: 80px;
 }
+
+
 .skills-details .experience .exp {
    color: white;
    margin-left: 20px;
@@ -437,12 +467,14 @@ section .button button:hover {
    margin: 0 6px;
 }
 
+
 .skills-details .boxes {
    width: 45%;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
 }
+
 
 .skills-details .box{
    width: calc(100% / 2 - 20px);
@@ -460,7 +492,6 @@ section .button button:hover {
    font-size: 60px;
    color: #b74b4b;
 }
-
 
 
 
@@ -558,11 +589,13 @@ Contact Section CSS
    padding: 45px 0;
 }
 
+
 .contact .text {
    width: 80%;
    text-align: center;
    margin: auto;
 }
+
 
 .contact-info a{
    color: white;
@@ -574,7 +607,6 @@ Contact Section CSS
    cursor: pointer;
    text-shadow: 0 0 10px #fff;
 }
-
 
 
 footer {
@@ -590,6 +622,7 @@ footer .text span {
    color: #fff;
 }
 
+
 footer .text span a {
    font-weight: 500;
    color: #fff;
@@ -599,6 +632,7 @@ footer .text span a {
 footer .text span a:hover {
    text-decoration: underline;
 }
+
 
 .scroll-buton a {
    position: fixed;
@@ -635,13 +669,17 @@ footer .text span a:hover {
 }
 
 
+
+/* @Media Section */
+
+
+
 @media (max-width: 900px) {
    .about .left img {
       height: 350px;
       width: 350px;
    }
 }
-
 
 
 @media (max-width: 968px) {
@@ -652,15 +690,18 @@ footer .text span a:hover {
       font-size: 1.5rem;
    }
    
+
    section .main-container {
       padding-left: 0px;
       display: flex;
       flex-direction: column;
    }
 
+
    .nav-container .links {
       display: none;
    }
+
 
    .hamburg,
    .cancel {
@@ -668,10 +709,12 @@ footer .text span a:hover {
       pointer-events: visible;
    }
 
+
    .main-container .content {
       margin-top:  20px;
       width: 80%;
    }
+
 
    .social-links i {
       width: 2.5rem;
@@ -679,11 +722,13 @@ footer .text span a:hover {
       font-size: 1.5rem;
    }
 
+
    .main-container .Face-Image {
       z-index: -1;
       width: 50%;
       height: 60%;
    }
+
 
    .skills .skills-details {
       align-items: center;
@@ -691,10 +736,12 @@ footer .text span a:hover {
       flex-direction: column;
    }
 
+
    .skills-details .text {
       width: 100%;
       margin-bottom: 50px;
    }
+
 
    .skills-details .boxes {
       justify-content: center;
@@ -702,10 +749,12 @@ footer .text span a:hover {
       width: 100%;
    }
 
+
    .services .boxes .box {
       margin: 20px 0;
       width: 100%;
    }
+
 
    .contact .text {
       width: 100%;
@@ -720,14 +769,17 @@ footer .text span a:hover {
       margin-bottom: 0px;
    }
    
+
    .main-container .content {
       width: 80%;
    }
+
 
    .main-container .button {
       margin-top: 15px;
    }
 
+   
    .skills-details .boxes .percent {
       font-size: 50px;
       color: #b74b4b;
