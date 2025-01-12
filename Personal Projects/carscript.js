@@ -1,10 +1,9 @@
 // This script is used to make the typewriter animation
 
-
 // if you wish to change the words just adjust these words
 const texts = [
     "Subaru",
-    "WRX"
+    "Wrx"
 ]
 
 let speed = 100;
