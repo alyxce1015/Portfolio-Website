@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Alyx Cui-Edio's Portfolio</title>
     <!--Library for icons-->
         <!--NOTE: was not working because you have to make sure the link actually goes to the library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -23,7 +23,12 @@
         </div>
         
         <div class="links">
-            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+            <!-- 
+            Can use this feature if there are redirects in the webpage:
+
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div> 
+
+            -->
             <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150"><a href="#about">About</a></div>
             <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#skills">Skills</a></div>
             <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250"><a href="#projects">Projects</a></div>
@@ -34,7 +39,6 @@
 
     <div class="dropDown">
         <div class="links">
-                <a href="#">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -66,7 +70,7 @@
                 <a target="_blank" href="https://www.linkedin.com/in/alyx-cui-edio/"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                <button>Contact Me</button>
+                <button><a href="#contact">Contact Me</a></button>
             </div>
         </div>
     </div>
@@ -212,12 +216,15 @@
             <span>Contact Me</span>
         </div>
         <div class="text">
-            <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">If you'd like to contact me</div>
-           
-           
-            <!-- CURRENTLY WORKING ON GOAL: GET INFO LISTED WITH ICONS AND HYPERLINKS-->  
+            <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">If you'd like to contact me</div>  
             <div class="contact-info">
-               <div><a class="fa-solid fa-envelope"><p>alyxce1015@gmail.com</p></a></div>
+               <div><a 
+                    target="_blank" 
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=alyxce1015@gmail.com&cc=Contact+me" 
+                    class="fa-solid fa-envelope">
+                    <p>alyxce1015@gmail.com</p>
+                    </a>
+                </div>
             </br>
                <div><a class="fa-solid fa-phone"><p>(909)-313-1460</p></a></div>
              </br>
@@ -226,9 +233,7 @@
 
 
 
-            <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-                <button><i class="fa-solid fa-phone"></i></button>
-            </div>
+            
         </div>
     </div>
 
