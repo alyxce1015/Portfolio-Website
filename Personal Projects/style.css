@@ -173,9 +173,9 @@ section .main-container {
 
 
 .main-container .Face-Image {
-   width: 500px;
+   width: 650px;
    height: 80vh;
-   border-radius: 100%;
+   border-radius: 7%;
    overflow: hidden;
    box-shadow: 0 0 50px #b74b4b;
 }
@@ -266,7 +266,7 @@ section .main-container {
 
 
 .content button{
-   width: 50%;
+   width: 22%;
    height: 6vh;
    margin: 30px;
    background-color: #b74b4b;
@@ -402,7 +402,7 @@ section .button {
 section .button button {
    outline: none;
    padding: 8px 16px;
-   border-radius: 4px;
+   border-radius: 100px;
    background: #b74b4b;
    color: #fff;
    border: 2px solid transparent;
