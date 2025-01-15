@@ -2,12 +2,11 @@
 
 // if you wish to change the words just adjust these words
 const texts = [
-    "student",
-    "SWE intern",
-    "Employee"
+    "Student",
+    "Software Engineer Intern",
 ]
 
-let speed = 100;
+let speed = 50;
 
 const textElements = document.querySelector(".typewriter-text");
 
