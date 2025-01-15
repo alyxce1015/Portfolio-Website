@@ -174,7 +174,7 @@ section .main-container {
 
 .main-container .Face-Image {
    width: 650px;
-   height: 80vh;
+   height: 70vh;
    border-radius: 7%;
    overflow: hidden;
    box-shadow: 0 0 50px #b74b4b;
