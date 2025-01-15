@@ -515,6 +515,7 @@ projects CSS
 
 
 .projects .boxes .box {
+   font-size: 40px;
    margin: 20px 0;
    width: calc(100% / 3 - 20px);
    text-align: center;
@@ -539,6 +540,12 @@ projects CSS
    opacity: 1;
    visibility: visible;
 }
+
+
+.box:hover .details b{
+   font-size: 20px;
+}
+
 
 .projects .boxes .box:hover {
    background: #b74b4b;
