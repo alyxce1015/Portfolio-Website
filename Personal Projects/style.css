@@ -93,11 +93,15 @@ nav {
 /* displays the nav links in the line as is*/
 .nav-container .links{
    display: flex;
+   justify-content: space-evenly;
+   align-items: right;
+   position: relative;
+   width: 30%;
 }
 
 /* This gives the transition effect and the color of the Nav links*/
 .nav-container .links a {
-   position: relative;
+   position: fixed;
    font-size: 1.2rem;
    color: white;
    margin: 0 20px;
@@ -105,6 +109,8 @@ nav {
    font-weight: 550;
    transition: 0.3s linear;
 }
+
+
 
 
 .nav-container .links a::before {
