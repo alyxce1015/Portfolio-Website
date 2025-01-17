@@ -394,6 +394,12 @@ section .topic {
 }
 
 
+.about-details .list {
+   text-align: justify;
+   color: white;
+}
+
+
 section .button {
    margin: 16px 0;
 }
