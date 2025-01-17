@@ -452,6 +452,12 @@ section .button button:hover {
    }
 
 
+   .skills-details .list{
+      color: white;
+      text-align: justify;
+   }
+
+
    .skills .skills-details .experience{
       display: flex;
       align-items: center;
