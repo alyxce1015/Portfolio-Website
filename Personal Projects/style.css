@@ -299,7 +299,7 @@ section .main-container {
 
 
 .main-container .content {
-   color: black;
+   color: gray;
    width: 40%;
 }
 
@@ -310,8 +310,8 @@ section .main-container {
 
 /* Color for name*/
 .content h1 span {
-   color: white;
-   text-shadow: 0 0 10px gray;
+   color: black;
+   text-shadow: 0 0 10px black;
 }
 
 /* Font size for the type writer*/
@@ -322,8 +322,8 @@ section .main-container {
 
 /* Color for the type writer*/
 .content .typewriter-text {
-   color: white;
-   text-shadow: 0 0 10px gray;
+   color: black;
+   text-shadow: 0 0 10px black;
 }
 
 .main-container .personalDesc {
