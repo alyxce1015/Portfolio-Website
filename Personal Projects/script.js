@@ -3,7 +3,7 @@
 // if you wish to change the words just adjust these words
 const texts = [
     "Student",
-    "Software Engineer Intern",
+    "CSUF"
 ]
 
 let speed = 50;
