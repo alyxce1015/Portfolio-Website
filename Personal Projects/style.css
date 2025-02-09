@@ -566,8 +566,9 @@ section .button button:hover {
 
 .skills .skills-details {
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
    align-items: center;
+   text-align: center;
 }
 
 
@@ -611,10 +612,11 @@ section .button button:hover {
 
 /* WORK ON: Fixing how the skills wrap, try to make it so that they wrap after 4-5 skills listed below each other */
 .skills-details .boxes {
-   width: 70%;
+   width: 65%;
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-evenly;
+   justify-content: center;
+   text-align: center;
 }
 
 
