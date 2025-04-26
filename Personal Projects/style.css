@@ -504,6 +504,9 @@ section .title span::after {
    border-radius: 12px;
 }
 
+.about .title {
+   padding-top: 20px;
+}
 
 .about-details .right {
    width: 55%;
@@ -628,8 +631,8 @@ section .button button:hover {
 
 
 .skills-details .box:hover {
-   transition: all 0.1s ease;
-   scale: 1.1;
+   transition: all 0.1s ease-in;
+   scale: 1.2;
 }
 
 
@@ -767,6 +770,8 @@ Contact Section CSS
 
 
 .contact-info a{
+   margin-top: 10px;
+   margin: 10px;
    color: black;
 }
 
