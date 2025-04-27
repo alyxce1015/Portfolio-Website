@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Alyx Cui-Edio's Portfolio</title>
-    <!--Library for icons-->
-        <!--NOTE: was not working because you have to make sure the link actually goes to the library-->
+
+    <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Text animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
     <script src="bower_components/aos/dist/aos.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- page design css -->
     <link rel="stylesheet" href="style.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
 
 <!--Navigation-->
 <nav>
     <div class="nav-container">
         <div class="links">
+            <!-- just copy paste each one to create a new link (dont forget to edit css) -->
             <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div> 
             <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150"><a href="#about">About</a></div>
             <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#skills">Skills</a></div>
             <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250"><a href="#projects">Projects</a></div>
             <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#contact">Contact</a></div>
-        </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-    </div>
-
-    <div class="dropDown">
-        <div class="links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
         </div>
     </div>
 </nav>
@@ -47,11 +44,11 @@
             <img src="Images/IMG_4315.JPG" alt="">
         </div>
         <div class="content">
-            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Alyx Cui Edio</span></h1>
-            <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I am a <span class="typewriter-text"></span><label for="">_</label></div> 
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hello I'm<span></span></h1>
+            <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900"><span class="typewriter-text"></span><label for="">|</label></div> 
     
             <!-- TEMP DESCRIPTION-->
-            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100" class="personalDesc">Computer Science student at CSUF and looking to work in the SWE field</p>
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100" class="personalDesc"></p>
             <div class="social-links">
                 <a target="_blank" href="https://github.com/alyxce1015/Projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github" id="git"></i></a>
                 <a target="_blank" href="https://www.instagram.com/alyx.cuiedio/"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram" id="insta"></i></a>
@@ -96,9 +93,9 @@
                 <div class="button">
 
                     <!-- Try to style better-->
-                    <p> My resume</p>
-                    <a href="Images/Alyxander Cui Edio MASTER COPY (2).pdf" download="Alyxander Cui Edio">
-                        <button type="button" class="fa-solid fa-download"></button>
+                    <p>My resume</p>
+                    <a target="_blank" href="Images/Alyxander Cui Edio Resume1.pdf">
+                        <button type="button">Resume</button>
                     </a>
                 </div>
             </div>
@@ -115,42 +112,6 @@
     <div class="content">
         <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Skills</span></div>
         <div class="skills-details">
-            <div class="text">
-                <!-- <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                    List of my skills
-                </div> -->
-                <!-- <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
-                    <div class="list"> 
-                     <ul>
-                        <li>
-                            C++
-                        </li>
-                        <li>
-                            Python
-                        </li>
-                        <li>
-                            HTML
-                        </li>
-                        <li>
-                            CSS
-                        </li>
-                        <li>
-                            JavaScript
-                        </li>
-                        <li>
-                            Linux
-                        </li>
-                     </ul>
-                    </div>
-                </p>
-                <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                    <div class="num">6</div>
-                    <div class="exp">
-                        Months of <br />
-                        Experience in the field
-                    </div>
-                </div> -->
-            </div>
 
             <!-- C++ skill -->
             <div class="boxes">
@@ -246,99 +207,70 @@
 
 <!-- Projects Section --> 
 
-<!-- NOTE THIS IS TEMP SHOULD BE CHANGED TO PERSONAL PROJECTS INSTEAD -->
-
 <section class="projects" id="projects">
     <div class="content">
-        <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Projects</span></div>
-        <div class="boxes">
-
-            <!-- Portfolio -->
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                <div class="icon">
-                    <i class="fas fa-desktop"></i>
-                </div>
-                <div class="topic">Portfolio Website</div>
-                    <div class="details">
-                        <p><b>HTML + CSS</b></p>
-                        <p>
-                            Personal Portfolio website
-
-
-
-                        </p>
-                    </div>
+      <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Projects</span></div>
+  
+      <div class="slideshow-wrapper">
+        <div class="slideshow-container">
+  
+          <!-- Slide 1 -->
+          <div class="mySlides fade">
+            <img src="Images/image4.jpg" alt="Portfolio" />
+            <div class="slide-content">
+              <h2>Portfolio Website</h2>
+              <p><b>HTML + CSS</b></p>
+              <p>Personal portfolio showcasing my projects and skills.</p>
             </div>
-            <!-- End -->
-
-            <!-- Nu Deck -->
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
-                <div class="icon">
-                    <i class="fa-solid fa-gamepad"></i>
-                </div>
-                <div class="topic">Nu Deck</div>
-                    <div class="details">
-                        <p><b>C# + Unity</b></p>
-                        <p>game boy project with pokemon styled game from scratch produced in group of 15 people</p>
-                    </div>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="mySlides fade">
+            <img src="Images/image7.jpg" alt="Nu Deck" />
+            <div class="slide-content">
+              <h2>Nu Deck</h2>
+              <p><b>C# + Unity</b></p>
+              <p>Gameboy project with a team of 15 people.</p>
             </div>
-            <!-- End -->
-
-            <!-- Custom Vector -->
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
-                <div class="icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <div class="topic">Custom Vector</div>
-                    <div class="details">
-                        <p><b>C++</b></p>
-                        <p>Created a working Vector class with most of the standard library vector functionality</p>
-                    </div>
+          </div>
+  
+          <!-- Slide 3 -->
+          <div class="mySlides fade">
+            <img src="Images/IMG_4315.JPG" alt="Custom Vector" />
+            <div class="slide-content">
+              <h2>Custom Vector</h2>
+              <p><b>C++</b></p>
+              <p>Built a custom Vector class similar to C++ STL Vector.</p>
             </div>
-            <!-- End -->
+          </div>
 
-            <!-- Palindrome Detector -->
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
-                <div class="icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <div class="topic">Palindrome Detector</div>
-                    <div class="details">
-                        <p><b>C++</b></p>
-                        <p>Independently created a palindrome detector by comparing a word in a stack and queue</p>
-                    </div>
+          <!-- Slide 4 -->
+          <div class="mySlides fade">
+            <img src="Images/pop.PNG" alt="Custom Vector" />
+            <div class="slide-content">
+              <h2>Custom Vector</h2>
+              <p><b>C++</b></p>
+              <p>Built a custom Vector class similar to C++ STL Vector.</p>
             </div>
-            <!-- End -->
+          </div>
+  
 
-            <!-- Car Page -->
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                <div class="icon">
-                    <i class="fas fa-desktop"></i>
-                </div>
-                <div class="topic">Personal Car Page</div>
-                    <div class="details">
-                        <p><b>HTML + CSS</b></p>
-                        <p>Website to showcase my personal project car</p>
-                    </div>
-            </div>
-            <!-- End -->
-             
-            <!-- Open for new project -->
-                         <!-- Car Page -->
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                <div class="icon">
-                    <i class=""></i>
-                </div>
-                <div class="topic">OPEN PROJECT</div>
-                    <div class="details">
-                        <p><b>Language</b></p>
-                        <p>description for new project</p>
-                    </div>
-            </div>
-            <!-- End -->
-
+          <!-- Next and prev buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+  
+    
+        <!-- Dots and circles -->
+        <div class="dots-wrapper">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
     </div>
+  </section>
 
 <!-- Services Section END-->    
 </section>
@@ -351,7 +283,7 @@
         <div class="title" data-aos="fade-up" data-aos-duration="1500"> 
             <span>Contact Me</span>
         </div>
-        <div class="text">
+        <div class="contact-text">
             <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">If you'd like to contact me</div>  
             <div class="contact-info">
                <div><a 
@@ -364,7 +296,6 @@
             </br>
                <div><a class="fa-solid fa-phone"><p>(909)-313-1460</p></a></div>
              </br>
-               <!-- <div><a class="fa-solid fa-location-dot"><p>8732 Founders Grove St.</p></a></div> -->
             </div>
         </div>
     </div>
@@ -376,7 +307,7 @@
 <!-- Footer Section -->
 
 <footer>
-    <div class="text">
+    <div class="footer-text">
         <span> Created by 
             <a href="#"> Alyx Cui-Edio</a>
             | 2024
