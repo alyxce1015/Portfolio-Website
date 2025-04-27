@@ -100,7 +100,7 @@ nav {
 } */
 
 /* hamburg and cancel button moved to top right */
-.hamburg, 
+/* .hamburg, 
 .cancel {
    cursor: pointer;
    position: absolute;
@@ -110,7 +110,7 @@ nav {
    opacity: 0;
    pointer-events: none;
    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
-}
+} */
 
 /* displays the nav links in the line as is*/
 .nav-container .links{
@@ -209,19 +209,6 @@ nav {
 }
 
 
-.dropDown {
-   z-index: 100;
-   position: absolute;
-   top: 0;
-   transform: translateY(-500px);
-   width: 100%;
-   height: auto;
-   backdrop-filter: blur(4px) brightness(40%);
-   box-shadow: 0 0 20px black;
-   transition: 0.2s linear;
-}
-
-
 section {
    width: 100%;
    min-height: 90vh;
@@ -272,7 +259,7 @@ section .main-container {
 
 
 .main-container .content {
-   color: gray;
+   color: black;
    width: 40%;
 }
 
@@ -506,6 +493,50 @@ section .topic {
 }
 
 
+
+/* 
+*
+*
+*
+Education Section CSS
+*
+*
+*
+*/
+
+
+
+.education-box{
+   display: flex;
+   align-items: center;
+   background-color: white; /* Light gray box background */
+   padding: 20px;
+   border-radius: 50px;
+   border: black;
+   box-shadow: 0px 0px 50px rgb(2, 2, 2);
+   margin-top: 30px;
+   max-width: 700px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+.education:hover{
+   cursor: pointer;
+   transition: all 0.2s ease-in;
+   scale: 1.063;
+}
+
+
+.education-image img {
+   width: 150px;
+   height: auto;
+   border-radius: 8px;
+   object-fit: cover;
+   margin-right: 30px;
+}
+
+
 section .button {
    margin: 16px 0;
 }
@@ -528,6 +559,19 @@ section .button button:hover {
    background-color: #fff;
    color: black;
 }
+
+
+
+/* 
+*
+*
+*
+Skills Section CSS
+*
+*
+*
+*/
+
 
 
 .skills {
@@ -635,15 +679,15 @@ projects CSS
    background-color: white;
 }
 
-
-.slideshow-wrapper {
+/* CAROUSEL */
+.carousel-wrapper {
    display: flex;
    flex-direction: column;
    align-items: center;
    width: 100%;
 }
 
-.slideshow-container {
+.carousel-container {
    width: 800px;
    height: 500px;
    margin: 20px auto;
@@ -771,7 +815,7 @@ projects CSS
  /* Fading animation */
  .fade {
    animation-name: fade;
-   animation-duration: 1.5s;
+   animation-duration: 2.5s;
  }
  
  @keyframes fade {
