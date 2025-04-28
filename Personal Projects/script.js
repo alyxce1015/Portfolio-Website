@@ -39,6 +39,8 @@ window.onload = typeWriter
 
 
 
+
+// Carousel slide controles 
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -52,6 +54,10 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+
+
+
+// Carousel function
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slides");
