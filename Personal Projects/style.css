@@ -52,8 +52,7 @@ nav {
    top: 10px; /* Keeps some spacing from the top */
    left: 50%;
    transform: translateX(-50%);
-   width: 50%; /* Adjusted width for better aesthetics */
-   max-width: 659px;
+   width: 44%; /* Adjusted width for better aesthetics */
    background: rgba(214, 210, 210, 0.85); /* Translucent background */
    backdrop-filter: blur(5px);
    border-radius: 30px; /* Rounded edges */
@@ -694,18 +693,29 @@ projects CSS
    position: relative;
    overflow: hidden;
    border-radius: 12px;
-   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   box-shadow: 0 0 30px rgba(0,0,0,0.5);
    background: black;
 }
 
  
  /* Hide the images by default */
- .mySlides img {
+ .slides img {
    width: 100%;
    height: 100%;
    object-fit: cover;
    filter: brightness(60%);
 }
+
+
+.dots-wrapper {
+   position: absolute;
+   top: 98%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top: -30px;
+   text-align: center;
+}
+
 
 /* Text content over the image */
 .slide-content {
@@ -723,29 +733,29 @@ projects CSS
    margin-bottom: 10px;
 }
 
+
 .slide-content p {
    font-size: 1rem;
    margin: 5px 0;
 }
-.dots-wrapper {
-   margin-top: 20px;
-   text-align: center;
-}
+
 
 .dots-wrapper .dot {
-   height: 15px;
-   width: 15px;
+   /* edit width and height to change style of dots easier option */
+   height: 5px;
+   width: 35px;
    margin: 0 5px;
    background-color: #bbb;
-   border-radius: 50%;
+   border-radius: 0%;
    display: inline-block;
    transition: background-color 0.6s ease;
    cursor: pointer;
 }
 
+
 .dots-wrapper .active,
 .dots-wrapper .dot:hover {
-   background-color: #717171;
+   background-color: white;
 }
 
 
@@ -765,17 +775,14 @@ projects CSS
    user-select: none;
  }
  
+
  /* Position the "next button" to the right */
  .next {
    right: 0;
    border-radius: 3px 0 0 3px;
  }
  
- /* On hover, add a black background color with a little bit see-through */
- .prev:hover, .next:hover {
-   background-color: rgba(0,0,0,0.8);
- }
- 
+
  /* Caption text */
  .text {
    color: #f2f2f2;
@@ -787,6 +794,7 @@ projects CSS
    text-align: center;
  }
  
+
  /* Number text (1/3 etc) */
  .numbertext {
    color: #f2f2f2;
@@ -796,6 +804,7 @@ projects CSS
    top: 0;
  }
  
+
  /* The dots/bullets/indicators */
  .dot {
    cursor: pointer;
@@ -808,37 +817,46 @@ projects CSS
    transition: background-color 0.6s ease;
  }
  
+
  .active, .dot:hover {
-   background-color: #717171;
+   background-color: white;
  }
  
+
  /* Fading animation */
  .fade {
    animation-name: fade;
    animation-duration: 2.5s;
  }
  
+
  @keyframes fade {
    from {opacity: .4}
    to {opacity: 1}
  }
 
+ 
+
+ /* 
+*
+*
+*
+Involvements Section CSS
+*
+*
+*
+*/
 
 
 
-
-
-
-
-
-.projects .boxes {
+.involvements .boxes {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
 }
 
 
-.projects .boxes .box {
+.involvements .boxes .box {
    font-size: 40px;
    margin: 20px 0;
    width: calc(100% / 3 - 20px);
@@ -871,13 +889,13 @@ projects CSS
 }
 
 
-.projects .boxes .box:hover {
+.involvements .boxes .box:hover {
    background: lightgray;
    color: black;
 }
 
 
-.projects .boxes .box .icon {
+.involvements .boxes .box .icon {
    height: 50px;
    width: 50px;
    background: gray;
@@ -897,15 +915,15 @@ projects CSS
 }
 
 
-.projects .boxes .box:hover .topic,
-.projects .boxes .box:hover .p {
+.involvements .boxes .box:hover .topic,
+.involvements .boxes .box:hover .p {
    color: white;
    transition: all 0.4s ease;
 }
 
 
-.projects .boxes .box:hover .topic,
-.projects .boxes .box:hover .p {
+.involvements .boxes .box:hover .topic,
+.involvements .boxes .box:hover .p {
    color: rgb(116, 3, 3);
    font-weight: bold;
 }
