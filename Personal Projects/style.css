@@ -52,7 +52,7 @@ nav {
    top: 10px; /* Keeps some spacing from the top */
    left: 50%;
    transform: translateX(-50%);
-   width: 44%; /* Adjusted width for better aesthetics */
+   width: 42%; /* Adjusted width for better aesthetics */
    background: rgba(214, 210, 210, 0.85); /* Translucent background */
    backdrop-filter: blur(5px);
    border-radius: 30px; /* Rounded edges */
