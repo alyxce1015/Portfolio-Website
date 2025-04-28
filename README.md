@@ -4,6 +4,8 @@ Welcome to my personal portfolio repo! This is my website that displays my acade
 of becoming a Software Engineer. This is an actively updating website so please do stay tuned for new
 features, updates, and Pictures!
 
+Website: https://alyxce1015.github.io/Portfolio-Website/
+
 # In-progress features
 
 * reformat contact section to make more interactable i.e text box
