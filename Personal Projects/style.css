@@ -634,6 +634,7 @@ Skills Section CSS
    width: 65%;
    display: flex;
    flex-wrap: wrap;
+   /* Change this to alighn wrapped items to a different side */
    justify-content: center;
    text-align: center;
 }
@@ -693,7 +694,7 @@ projects CSS
    position: relative;
    overflow: hidden;
    border-radius: 12px;
-   box-shadow: 0 0 30px rgba(0,0,0,0.5);
+   box-shadow: 0 0 50px rgba(0,0,0,0.5);
    background: black;
 }
 
@@ -731,12 +732,47 @@ projects CSS
 .slide-content h2 {
    font-size: 2rem;
    margin-bottom: 10px;
+   color: white;
 }
 
 
+.slide-content b {
+   color: white;
+}
+
+
+.slide-content .github-links:hover {
+   color: white;
+   cursor: pointer;
+   text-decoration: underline;
+}
+
 .slide-content p {
-   font-size: 1rem;
-   margin: 5px 0;
+   font-size: .9rem;
+   margin: 30px 0;
+}
+
+
+.slide-content .code-language {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap; /* So if it overflows, it moves to next line */
+   gap: 2.1px; /* Even space between languages */
+   margin-bottom: 10px;
+}
+
+
+/* Language styling in project box */
+.slide-content .code-language b {
+   text-align: center;
+   text-shadow: 0px 0px 2px white;
+   font-size: 0.94rem;
+   margin-bottom: 2.5px;
+   padding: 6px 15px;
+   border: 2px solid rgb(158, 158, 158);
+   border-radius: 20px;
+   background-color: transparent;
+   white-space: nowrap; /* Prevents breaking inside */
 }
 
 
