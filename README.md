@@ -1,13 +1,12 @@
-# Welcome to My repository
+# Personal Portfolio Website
 
+Welcome to my personal portfolio repo! This is my website that displays my academic journey
+of becoming a Software Engineer. This is an actively updating website so please do stay tuned for new
+features, updates, and Pictures!
 
+# In-progress features
 
-you will find my personal projects in the "personal projects" folder
-I am currently working on launching personal portfolio
-
-# Current Goals for Personal Portfolio Project
-
-* adjust skills section to wrap around to the left instead of center
-* Change descriptions from temp descriptions to something more serious
-* reformat contact section to make more interactable
-* change color scheme on page
+* reformat contact section to make more interactable i.e text box
+* change color scheme on page maybe?
+* Add work experience timeline (when i have more experience...)
+* update images to more professional ones
